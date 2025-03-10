@@ -1,0 +1,106 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --background: #06080c;
+  --background-card: #0b0e12;
+  --background-info: #101318;
+
+  --color-primary: #fff;
+  --color-danger: #eb0237;
+  --color-gray: #b4b5b6;
+  --color-orange: #eb6402;
+  --color-green: #43ad28;
+  --font-family-title: 'TacticSans', sans-serif;
+  --btn-hover: #a01131;
+  --btn-disabled: #701328;
+  --background-message: #0f1318;
+  --label-color: rgba(250, 250, 250, 0.4);
+  --select-pressed-border: #171d25;
+  --select-option-hover: #11161d;
+  --select-option-pressed: #0d1115;
+  --select-option-disabled-color: #68696a;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  /* height: 100%; */
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 42px;
+  margin: 0 auto;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--label-color);
+}
+
+.count {
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding: 0 16px;
+  }
+  .label {
+    font-size: 12px;
+  }
+  .count {
+    font-size: 14px;
+  }
+}

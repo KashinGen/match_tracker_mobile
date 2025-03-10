@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'TacticSans';
+  src:
+    url('../../public/fonts/TacticSans-BlkIt.woff2') format('woff2'),
+    url('../../public/fonts/TacticSans-BlkIt.woff2') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
